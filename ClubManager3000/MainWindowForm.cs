@@ -132,6 +132,7 @@ namespace ClubManager3000
                 SociList.RemoveAt(index);
                 RefreshListBox(socisListBox, SociList);
                 statusTextBox.Text = "Soci esborrat correctament!";
+                SaveData();
             }
             else
             {

@@ -34,6 +34,9 @@
             this.statusTextBox = new System.Windows.Forms.TextBox();
             this.sociActionsGroup = new System.Windows.Forms.GroupBox();
             this.dadesSociGroupBox = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.removeActivitatButton = new System.Windows.Forms.Button();
+            this.addActivitatButton = new System.Windows.Forms.Button();
             this.dataAltaTextBox = new System.Windows.Forms.TextBox();
             this.dataAltaLabel = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -51,9 +54,6 @@
             this.removeSociButton = new System.Windows.Forms.Button();
             this.addSociButton = new System.Windows.Forms.Button();
             this.saveSociButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.removeActivitatButton = new System.Windows.Forms.Button();
-            this.addActivitatButton = new System.Windows.Forms.Button();
             this.modifySociButton = new System.Windows.Forms.Button();
             this.headerPictureBox = new System.Windows.Forms.PictureBox();
             this.sociActionsGroup.SuspendLayout();
@@ -119,6 +119,46 @@
             this.dadesSociGroupBox.TabIndex = 6;
             this.dadesSociGroupBox.TabStop = false;
             this.dadesSociGroupBox.Text = "Dades del soci seleccionat";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 389);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(333, 38);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
+            // removeActivitatButton
+            // 
+            this.removeActivitatButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("removeActivitatButton.BackgroundImage")));
+            this.removeActivitatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.removeActivitatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeActivitatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeActivitatButton.ForeColor = System.Drawing.Color.Black;
+            this.removeActivitatButton.Location = new System.Drawing.Point(121, 352);
+            this.removeActivitatButton.Name = "removeActivitatButton";
+            this.removeActivitatButton.Size = new System.Drawing.Size(25, 25);
+            this.removeActivitatButton.TabIndex = 20;
+            this.removeActivitatButton.UseCompatibleTextRendering = true;
+            this.removeActivitatButton.UseVisualStyleBackColor = true;
+            this.removeActivitatButton.Click += new System.EventHandler(this.RemoveActivitatButton_Click);
+            // 
+            // addActivitatButton
+            // 
+            this.addActivitatButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addActivitatButton.BackgroundImage")));
+            this.addActivitatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addActivitatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addActivitatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addActivitatButton.ForeColor = System.Drawing.Color.Black;
+            this.addActivitatButton.Location = new System.Drawing.Point(90, 352);
+            this.addActivitatButton.Name = "addActivitatButton";
+            this.addActivitatButton.Size = new System.Drawing.Size(25, 25);
+            this.addActivitatButton.TabIndex = 19;
+            this.addActivitatButton.UseCompatibleTextRendering = true;
+            this.addActivitatButton.UseVisualStyleBackColor = true;
+            this.addActivitatButton.Click += new System.EventHandler(this.AddActivitatButton_Click);
             // 
             // dataAltaTextBox
             // 
@@ -296,46 +336,6 @@
             this.saveSociButton.TabIndex = 9;
             this.saveSociButton.UseVisualStyleBackColor = false;
             this.saveSociButton.Click += new System.EventHandler(this.SaveSociButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 389);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(333, 38);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
-            // removeActivitatButton
-            // 
-            this.removeActivitatButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("removeActivitatButton.BackgroundImage")));
-            this.removeActivitatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.removeActivitatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeActivitatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeActivitatButton.ForeColor = System.Drawing.Color.Black;
-            this.removeActivitatButton.Location = new System.Drawing.Point(121, 352);
-            this.removeActivitatButton.Name = "removeActivitatButton";
-            this.removeActivitatButton.Size = new System.Drawing.Size(25, 25);
-            this.removeActivitatButton.TabIndex = 20;
-            this.removeActivitatButton.UseCompatibleTextRendering = true;
-            this.removeActivitatButton.UseVisualStyleBackColor = true;
-            this.removeActivitatButton.Click += new System.EventHandler(this.RemoveActivitatButton_Click);
-            // 
-            // addActivitatButton
-            // 
-            this.addActivitatButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addActivitatButton.BackgroundImage")));
-            this.addActivitatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.addActivitatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addActivitatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addActivitatButton.ForeColor = System.Drawing.Color.Black;
-            this.addActivitatButton.Location = new System.Drawing.Point(121, 321);
-            this.addActivitatButton.Name = "addActivitatButton";
-            this.addActivitatButton.Size = new System.Drawing.Size(25, 25);
-            this.addActivitatButton.TabIndex = 19;
-            this.addActivitatButton.UseCompatibleTextRendering = true;
-            this.addActivitatButton.UseVisualStyleBackColor = true;
-            this.addActivitatButton.Click += new System.EventHandler(this.AddActivitatButton_Click);
             // 
             // modifySociButton
             // 
