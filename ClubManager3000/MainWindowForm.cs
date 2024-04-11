@@ -192,7 +192,6 @@ namespace ClubManager3000
         private void SaveSociButton_Click(object sender, EventArgs e)
         {
             if (AddNewSoci)
-            if (AddNewSoci)
             {
                 GuardarNouSoci();
                 AddNewSoci = false;
